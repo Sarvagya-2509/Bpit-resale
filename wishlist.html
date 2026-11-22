@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wishlist - BPIT Resale</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">BPIT Resale</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="explore.html" class="nav-item">Shop</a>
+            <a href="sell.html" class="nav-item">Sell</a>
+            <a href="wishlist.html" class="nav-item active">Wishlist</a>
+            <a href="login.html" class="nav-item" id="navLogin">Login</a>
+            <a href="#" class="nav-item" id="navLogout" onclick="logout()" style="display:none;">Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <section class="hero">
+                <h1>Your Wishlist</h1>
+                <p>Review your saved items and proceed to purchase</p>
+            </section>
+
+            <section class="wishlist-grid" id="wishlistGrid">
+                <!-- Dynamically populated by script.js -->
+            </section>
+
+            <div class="proceed-section">
+                <p style="color:#4a8080; margin-bottom:10px;">Total: ₹<span id="wishlistTotal">0</span></p>
+                <button class="proceed-btn" onclick="alert('Connecting to payment — coming soon!')">Proceed to Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>© 2026 BPIT Student Marketplace</footer>
+    <script src="script.js"></script>
+</body>
+</html>

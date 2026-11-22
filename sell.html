@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sell - BPIT Resale</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>#sellMsg { text-align:center; font-size:14px; margin-top:10px; min-height:20px; }</style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">BPIT Resale</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="explore.html" class="nav-item">Shop</a>
+            <a href="sell.html" class="nav-item active">Sell</a>
+            <a href="wishlist.html" class="nav-item">Wishlist</a>
+            <a href="login.html" class="nav-item" id="navLogin">Login</a>
+            <a href="#" class="nav-item" id="navLogout" onclick="logout()" style="display:none;">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Post an Item</h2>
+        <form id="sellForm">
+            <label>Item Name:</label>
+            <input type="text" id="itemName" placeholder="e.g. Scientific Calculator" required>
+
+            <label>Category:</label>
+            <select id="itemCategory">
+                <option value="tools">Tools</option>
+                <option value="clothing">Clothing</option>
+                <option value="notes">Notes</option>
+            </select>
+
+            <label>Description:</label>
+            <textarea id="itemDesc" rows="4" placeholder="Describe condition, included accessories, etc." required></textarea>
+
+            <label>Condition:</label>
+            <select id="itemCondition">
+                <option>New</option>
+                <option>Good</option>
+                <option>Used</option>
+            </select>
+
+            <label>Price (₹):</label>
+            <input type="number" id="itemPrice" placeholder="e.g. 200" required min="1">
+
+            <label>Contact Number:</label>
+            <input type="tel" id="itemContact" placeholder="e.g. 9876543210" required>
+
+            <button type="submit">Post Item</button>
+            <p id="sellMsg"></p>
+        </form>
+    </div>
+
+    <footer>© 2026 BPIT Student Marketplace</footer>
+    <script src="script.js"></script>
+</body>
+</html>

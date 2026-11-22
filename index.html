@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BPIT Resale Platform</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">BPIT Resale</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item active">Home</a>
+            <a href="explore.html" class="nav-item">Shop</a>
+            <a href="sell.html" class="nav-item">Sell</a>
+            <a href="wishlist.html" class="nav-item">Wishlist</a>
+            <a href="login.html" class="nav-item" id="navLogin">Login</a>
+            <a href="#" class="nav-item" id="navLogout" onclick="logout()" style="display:none;">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-box">
+                <h1>Buy & Sell Engineering Essentials Easily</h1>
+                <p>A dedicated marketplace for BPIT students to buy and sell academic tools, save money, and help fellow students.</p>
+                <div class="buttons">
+                    <a href="explore.html" class="btn">Start Shopping</a>
+                    <a href="sell.html" class="btn">Sell an Item</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
+
+        <div class="zigzag-section">
+            <div class="zigzag-row">
+                <div class="zigzag-text">
+                    <h2>What We Do</h2>
+                    <p>BPIT Resale helps students buy and sell engineering essentials like drafter, lab coats, calculators, and sheets at affordable prices.</p>
+                </div>
+                <div class="zigzag-box"></div>
+            </div>
+            <div class="zigzag-row reverse">
+                <div class="zigzag-text">
+                    <h2>Why We Do It</h2>
+                    <p>Students often spend too much on new equipment. Our platform helps reduce costs and promotes reuse.</p>
+                </div>
+                <div class="zigzag-box"></div>
+            </div>
+            <div class="zigzag-row">
+                <div class="zigzag-text">
+                    <h2>Our Goal</h2>
+                    <p>To create a centralized platform for BPIT students to exchange academic tools easily and sustainably.</p>
+                </div>
+                <div class="zigzag-box"></div>
+            </div>
+            <div class="zigzag-row reverse">
+                <div class="zigzag-text">
+                    <h2>How It Works</h2>
+                    <p>Login → Explore/Sell → Wishlist → Negotiate Price.</p>
+                </div>
+                <div class="zigzag-box"></div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="card">
+                <h3>Save Money</h3>
+                <p>Buy items at affordable student prices.</p>
+            </div>
+            <div class="card">
+                <h3>Sell Easily</h3>
+                <p>Sell unused items quickly.</p>
+            </div>
+            <div class="card">
+                <h3>Help Students</h3>
+                <p>Support juniors and reduce waste.</p>
+            </div>
+        </div>
+
+        <footer>© 2026 BPIT Student Marketplace</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

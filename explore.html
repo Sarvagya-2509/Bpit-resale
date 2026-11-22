@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - BPIT Resale</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">BPIT Resale</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="explore.html" class="nav-item active">Shop</a>
+            <a href="sell.html" class="nav-item">Sell</a>
+            <a href="wishlist.html" class="nav-item">Wishlist</a>
+            <a href="login.html" class="nav-item" id="navLogin">Login</a>
+            <a href="#" class="nav-item" id="navLogout" onclick="logout()" style="display:none;">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="heading">Explore Affordable Engineering Items</h1>
+
+        <div class="wishlist-bar">
+            ❤️ Wishlist Items: <span id="wishlistCount">0</span>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search items...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="notes">Notes</option>
+                <option value="tools">Tools</option>
+                <option value="clothing">Clothing</option>
+            </select>
+            <select id="priceSort">
+                <option value="default">Sort by Price</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+
+        <div class="grid" id="productGrid"></div>
+
+        <footer>© 2026 BPIT Student Marketplace</footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalPrice" style="font-size:18px;color:#2d5f5e;margin:8px 0;"></p>
+            <p id="modalDesc" style="color:#4a8080;"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

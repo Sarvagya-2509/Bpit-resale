@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - BPIT Resale</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        #errorMsg { color: #c0392b; font-size: 13px; margin-bottom: 10px; min-height: 18px; }
+        #toggleMsg { color: #4a8080; font-size: 13px; margin-bottom: 16px; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">BPIT Resale</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="explore.html" class="nav-item">Shop</a>
+            <a href="sell.html" class="nav-item">Sell</a>
+            <a href="wishlist.html" class="nav-item">Wishlist</a>
+            <a href="login.html" class="nav-item active" id="navLogin">Login</a>
+            <a href="#" class="nav-item" id="navLogout" onclick="logout()" style="display:none;">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="brand">BPIT Resale Platform</h1>
+        <h2 id="formTitle">Login</h2>
+        <p id="toggleMsg">Login using your student ID</p>
+
+        <form id="loginForm">
+            <p id="errorMsg"></p>
+            <label>Student Email</label>
+            <input type="email" id="username" placeholder="e.g. xyz@bpitindia.edu.in" required>
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+            <button type="submit" id="submitBtn">Sign In</button>
+            <div class="links">
+                <a href="#" id="registerLink">Don't have an account? Register</a>
+                <a href="#">Forgot password?</a>
+            </div>
+        </form>
+    </div>
+
+    <footer>© 2026 BPIT Student Marketplace</footer>
+    <script src="script.js"></script>
+</body>
+</html>
